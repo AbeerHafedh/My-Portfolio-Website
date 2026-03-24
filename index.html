@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Abeer Hafedh Portfolio Website</title>
+    <title>Abeer Hafedh | Frontend Developer & UI/UX Enthusiast</title>
     <!-- Google Fonts + Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,6 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
@@ -50,14 +49,16 @@
                         <p class="tagline">"Designing beautiful, user-friendly web experiences."</p>
                         <div class="hero-buttons">
                             <a href="#projects" class="btn-primary">View Work</a>
-                            <a href="#contact" class="btn-outline">Get in Touch</a>
+                            <a href="#experience" class="btn-outline">My Journey</a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="profile-placeholder">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Abeer Hafedh</span>
-                            <small>Frontend Developer · UI/UX</small>
+                        <div class="profile-image-wrapper">
+                            <!-- استبدل مسار الصورة هنا بمسار صورتك الشخصية -->
+                            <img src="img.jpeg" 
+                                 alt="Abeer Hafedh - Frontend Developer" 
+                                 class="profile-image">
+                            <div class="profile-image-glow"></div>
                         </div>
                     </div>
                 </div>
@@ -72,8 +73,8 @@
                 <div class="about-grid">
                     <div class="about-card glass-card fade-left">
                         <i class="fas fa-palette about-icon"></i>
-                        <p>I'm Abeer Hafedh, a passionate Frontend Developer from Baghdad, Iraq. I specialize in crafting responsive, interactive web interfaces that blend aesthetics with functionality. With a strong foundation in HTML, CSS, and JavaScript, I bring designs to life while ensuring seamless user experiences across all devices.</p>
-                        <p>Beyond frontend, I have a keen interest in UI/UX design and have delivered workshops to empower others in creating user-centered digital products. I also understand backend concepts (Python) and system integration, allowing me to collaborate effectively on full-stack projects. My goal is to build clean, modern, and accessible web experiences that solve real-world problems.</p>
+                        <p>I'm Abeer Hafedh, a Frontend Developer from Baghdad, specializing in building responsive and interactive web interfaces using HTML, CSS, and JavaScript. I focus on creating clean, modern, and user-friendly experiences,</p>
+                            <p> with a strong interest in UI/UX design and a solid understanding of backend concepts (Python) for effective full-stack collaboration.</p>
                     </div>
                     <div class="about-highlight glass-card fade-right">
                         <h3><i class="fas fa-heart"></i> What Drives Me</h3>
@@ -195,44 +196,18 @@
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Let's Connect</h2>
-                <div class="contact-wrapper">
-                    <div class="contact-info glass-card">
-                        <h3><i class="fas fa-envelope-open-text"></i> Get in Touch</h3>
-                        <div class="contact-detail"><i class="fas fa-envelope"></i> abeerhafedh18@gmail.com</div>
-                        <div class="contact-detail"><i class="fab fa-linkedin"></i> linkedin.com/in/abeer-hafedh</div>
-                        <div class="contact-detail"><i class="fab fa-github"></i> github.com/abeerhafedh</div>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-form glass-card">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" placeholder="Email Address" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-                            <div id="formFeedback" class="form-feedback"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
-        <p>© 2025 Abeer Hafedh — Crafting beautiful web experiences from Baghdad.</p>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/AbeerHafedh" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.behance.net/abeerhafedh" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="https://linkedin.com/in/abeer-hafedh" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:abeerhafedh18@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2026 Abeer Hafedh — Crafting beautiful web experiences from Baghdad.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
