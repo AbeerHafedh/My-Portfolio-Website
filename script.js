@@ -1,8 +1,5 @@
-// script.js - Interactive Portfolio for Abeer Hafedh
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ----- Typing Animation for Hero Title -----
     const titles = ["Frontend Developer", "UI/UX Enthusiast", "Creative Coder"];
     let titleIndex = 0;
     let charIndex = 0;
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     typeEffect();
     
-    // ----- Mobile Menu Toggle -----
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     
@@ -45,14 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
     
-    // Close mobile menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
         });
     });
     
-    // ----- Dark/Light Mode Toggle -----
     const themeToggle = document.getElementById('themeToggle');
     
     themeToggle.addEventListener('click', () => {
@@ -67,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // ----- Scroll Animation with Intersection Observer -----
     const animatedElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-slide');
     
     const scrollObserver = new IntersectionObserver((entries) => {
@@ -81,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     animatedElements.forEach(el => scrollObserver.observe(el));
     
-    // Also observe cards and sections
     document.querySelectorAll('.about-card, .skill-card, .project-card, .timeline-item, .contact-info, .contact-form, .hero-content').forEach(el => {
         if (!el.classList.contains('fade-up') && !el.classList.contains('fade-left') && !el.classList.contains('fade-right')) {
             el.classList.add('fade-slide');
@@ -89,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // ----- Animate Skill Bars on Scroll -----
     const skillBars = document.querySelectorAll('.level-bar');
     
     const skillObserver = new IntersectionObserver((entries) => {
@@ -97,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 const bar = entry.target;
                 const width = bar.style.width;
-                // Trigger reflow to animate
                 bar.style.transition = 'width 1s ease';
                 bar.style.width = width;
                 skillObserver.unobserve(bar);
@@ -107,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     skillBars.forEach(bar => skillObserver.observe(bar));
     
-    // ----- Contact Form Submission -----
     const contactForm = document.getElementById('contactForm');
     const feedbackDiv = document.getElementById('formFeedback');
     
@@ -128,8 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // ----- Smooth scroll for navigation (already handled by CSS) -----
-    // Add active link highlight on scroll
+
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-links a');
     
@@ -151,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Add active style for nav links
     const style = document.createElement('style');
     style.textContent = `
         .nav-links a.active {
