@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Abeer Hafedh Portfolio Website</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <div class="logo">Abeer<span>.</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content fade-up">
+                    <div class="hero-text">
+                        <h1>Abeer Hafedh</h1>
+                        <div class="typing-wrapper">
+                            <span id="typed-text" class="typed"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="tagline">"Designing beautiful, user-friendly web experiences."</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn-primary">View Work</a>
+                            <a href="#contact" class="btn-outline">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Abeer Hafedh</span>
+                            <small>Frontend Developer · UI/UX</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg-shape"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card glass-card fade-left">
+                        <i class="fas fa-palette about-icon"></i>
+                        <p>I'm Abeer Hafedh, a passionate Frontend Developer from Baghdad, Iraq. I specialize in crafting responsive, interactive web interfaces that blend aesthetics with functionality. With a strong foundation in HTML, CSS, and JavaScript, I bring designs to life while ensuring seamless user experiences across all devices.</p>
+                        <p>Beyond frontend, I have a keen interest in UI/UX design and have delivered workshops to empower others in creating user-centered digital products. I also understand backend concepts (Python) and system integration, allowing me to collaborate effectively on full-stack projects. My goal is to build clean, modern, and accessible web experiences that solve real-world problems.</p>
+                    </div>
+                    <div class="about-highlight glass-card fade-right">
+                        <h3><i class="fas fa-heart"></i> What Drives Me</h3>
+                        <ul>
+                            <li>✨ Crafting pixel-perfect, responsive interfaces</li>
+                            <li>🎨 Bridging design thinking with code</li>
+                            <li>📱 Creating inclusive, accessible web experiences</li>
+                            <li>🚀 Continuous learning & modern web technologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (Animated Cards) -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card zoom-hover">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5 & CSS3</h3>
+                        <p>Semantic markup, Flexbox, Grid, animations, and responsive layouts</p>
+                        <div class="skill-level"><div class="level-bar" style="width: 92%"></div></div>
+                    </div>
+                    <div class="skill-card glass-card zoom-hover">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript (ES6+)</h3>
+                        <p>DOM manipulation, async/await, APIs, and interactive components</p>
+                        <div class="skill-level"><div class="level-bar" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-card glass-card zoom-hover">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach, media queries, fluid typography</p>
+                        <div class="skill-level"><div class="level-bar" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-card glass-card zoom-hover">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Wireframing, prototyping, user flows, accessibility principles</p>
+                        <div class="skill-level"><div class="level-bar" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-card glass-card zoom-hover">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git & Version Control</h3>
+                        <p>Git workflows, branching, collaboration on GitHub</p>
+                        <div class="skill-level"><div class="level-bar" style="width: 82%"></div></div>
+                    </div>
+                    <div class="skill-card glass-card zoom-hover">
+                        <i class="fab fa-python"></i>
+                        <h3>Basic Python & Backend</h3>
+                        <p>Understanding APIs, system integration, Flask basics</p>
+                        <div class="skill-level"><div class="level-bar" style="width: 75%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1: School Management System Interface -->
+                    <div class="project-card glass-card zoom-hover">
+                        <div class="project-icon"><i class="fas fa-school"></i></div>
+                        <h3>School Management System</h3>
+                        <p>Modern, responsive frontend interface for managing students, teachers, and classes. Includes dashboards, attendance tracker, and grade management UI with smooth interactions.</p>
+                        <div class="tech-stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Chart.js</span></div>
+                        <a href="#" class="project-btn">Live Preview <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Project 2: CRM Dashboard UI -->
+                    <div class="project-card glass-card zoom-hover">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>CRM Dashboard UI (Odoo-style)</h3>
+                        <p>Analytics dashboard with interactive data visualization, client management panels, and sales funnel overview. Designed for CRM efficiency with clean, modern aesthetics.</p>
+                        <div class="tech-stack"><span>Tailwind CSS</span><span>JavaScript</span><span>Chart.js</span><span>FontAwesome</span></div>
+                        <a href="#" class="project-btn">Live Preview <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Project 3: Cosmetic Skincare Website -->
+                    <div class="project-card glass-card zoom-hover">
+                        <div class="project-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Skincare Cosmetics UI</h3>
+                        <p>Elegant product showcase website with interactive chatbot concept. Features product cards, testimonials, and a smart skincare quiz interface for personalized recommendations.</p>
+                        <div class="tech-stack"><span>HTML5/CSS3</span><span>JavaScript</span><span>LocalStorage</span><span>Responsive</span></div>
+                        <a href="#" class="project-btn">Live Preview <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experience & Growth</h2>
+                <div class="timeline">
+                    <div class="timeline-item glass-card fade-slide">
+                        <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                        <div class="timeline-content">
+                            <h3>Frontend Developer <span>2023 – Present</span></h3>
+                            <p>Building responsive web applications, collaborating on real-world systems like school management interfaces and CRM dashboards. Focus on performance, accessibility, and modern design patterns.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item glass-card fade-slide">
+                        <div class="timeline-icon"><i class="fas fa-chalkboard-user"></i></div>
+                        <div class="timeline-content">
+                            <h3>UI/UX Workshop Presenter <span>2024</span></h3>
+                            <p>Delivered interactive workshops on user-centered design, prototyping, and usability principles. Guided participants through building design systems and improving user flows.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item glass-card fade-slide">
+                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <h3>Tech Learner & Developer <span>Continuous</span></h3>
+                            <p>Constantly exploring modern frontend frameworks, design tools, and backend integration concepts. Passionate about creating impactful digital experiences through clean code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info glass-card">
+                        <h3><i class="fas fa-envelope-open-text"></i> Get in Touch</h3>
+                        <div class="contact-detail"><i class="fas fa-envelope"></i> abeerhafedh18@gmail.com</div>
+                        <div class="contact-detail"><i class="fab fa-linkedin"></i> linkedin.com/in/abeer-hafedh</div>
+                        <div class="contact-detail"><i class="fab fa-github"></i> github.com/abeerhafedh</div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form glass-card">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                            <div id="formFeedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Abeer Hafedh — Crafting beautiful web experiences from Baghdad.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
